@@ -1,43 +1,39 @@
 import numpy as np
 
 def calculate(list):
+    if( len(list) !=9):
+    raise valueError("list must contain nine numbers.")
+
+    ls.array(list)
+    print(ls)
+
+ mean_rows = ([ls[0,1,2]].mean(), ls[(3,4,5)].mean(), ls([6,7,8]).mean())
+ mean_rows = ([ls[0,1,2]].mean(), ls[(3,4,5)].mean(), ls([6,7,8]).mean())
+ mean_columns = ([ls([0,3,6]).mean(), ls([1,4,7]).mean(), ls([2,5,8]).mean()])
+
+var_rows = ([ls[0,1,2]].var(), ls[(3,4,5)].var(), ls([6,7,8]).var())
+ var_columns = ([ls([0,3,6]).var(), ls([1,4,7]).var(), ls([2,5,8]).var()])
   
-  try:
-      #converting list into 3X3 matrix	
-      num_array = np.array(list).reshape(3,3)
+  std_rows = ([ls[0,1,2]].std(), ls[(3,4,5)].std(), ls([6,7,8]).std())
+ std_columns = ([ls([0,3,6]).std(), ls([1,4,7]).std(), ls([2,5,8]).std()])
+
+ max_rows = ([ls[0,1,2]].max(), ls[(3,4,5)].max(), ls([6,7,8]).max())
+ max_columns = ([ls([0,3,6]).max(), ls([1,4,7]).max(), ls([2,5,8]).max()])
+
+ min_rows = ([ls[0,1,2]].min(), ls[(3,4,5)].min(), ls([6,7,8]).min())
+ min_columns = ([ls([0,3,6]).min(), ls([1,4,7]).min(), ls([2,5,8]).min()])
+
+ sum_rows = ([ls[0,1,2]].sum(), ls[(3,4,5)].sum(), ls([6,7,8]).sum())
+ sum_columns = ([ls([0,3,6]).sum(), ls([1,4,7]).sum(), ls([2,5,8]).sum()])
+
+
+  
+    return(
         
-      #calculating mean across Row, column and mean of matrix
-      mean_row = num_array.mean(axis = 0).tolist() 
-      mean_col = num_array.mean(axis = 1).tolist()
-      mean_val = num_array.mean()
-      #calculating variance across rows, column and variance of matrix
-      vari_row = num_array.var(axis = 0).tolist()
-      vari_col = num_array.var(axis = 1).tolist()
-      variance = num_array.var()
-      #standard deviation calculating standard deviation across Row, column and standard deviation of matrix
-      sd_row = num_array.std(axis = 0).tolist() 
-      sd_col = num_array.std(axis = 1).tolist()
-      sd =  num_array.std()
-      #calculating maximum across Row, column and maximun of matrix
-      max_row = num_array.max(axis = 0).tolist() 
-      max_col = num_array.max(axis = 1).tolist() 
-      maximum = num_array.max()
-      #calculating minimum across Row, column and minimum of matrix
-      min_row = num_array.min(axis=0).tolist() 
-      min_col = num_array.min(axis=1).tolist() 
-      minimum = num_array.min()
-      #calculating sum across Row, column and sum of matrix
-      sum_row = num_array.sum(axis=0).tolist()
-      sum_col = num_array.sum(axis=1).tolist()
-      sum_val = num_array.sum()
-      #converting the result into a dictionary value  
-      calulation = {'mean': [mean_row, mean_col, mean_val],
-             'variance': [vari_row, vari_col, variance],
-             'standard deviation': [sd_row, sd_col, sd],
-             'max' : [max_row, max_col, maximum],
-             'min' : [min_row, min_col, minimum],
-             'sum' : [sum_row, sum_col, sum_val]
-             }
-      return calulation
-  except ValueError:
-    print('List must contain nine numbers.')
+  'mean': [mean_columns, mean_rows, ls.mean()],
+  variance': [var_columns, var_rows, ls.var()],
+  'standard deviation': [std_columns, std_rows, ls.std()],
+  'max': [max_columns, max_rows, ls.max()],
+  'min': [min_columns, min_rows, ls.min() ],
+  'sum': [sum_columns, sum_rows, ls.sum()]
+    )
