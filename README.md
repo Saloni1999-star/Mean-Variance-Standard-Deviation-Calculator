@@ -1,3 +1,25 @@
+# 📊 Mean, Variance & Standard Deviation Calculator
+
+A simple Python project that calculates basic statistical measures — **mean**, **variance**, and **standard deviation** — from a dataset.
+About This Project
+
+This version is customized by **Saloni Dhiman** as part of hands-on learning in Python and data analysis. Originally forked and enhanced with clear explanations, structure, and formatting.
+
+---
+
+## 🚀 Features
+- Calculates mean, variance, and standard deviation
+- Easy-to-read Python functions
+- Beginner-friendly and customizable
+
+---
+
+## 📁 Project Files
+- `main.py`: Main script to execute the program
+- `mean_var_std.py`: Logic and functions
+- `README.md`: Project overview and credits
+
+---
 ### This project is part of freecodecamp data analysis with python
 
 Create a function named `calculate()` in `mean_var_std.py` that uses Numpy to output the mean, variance, standard deviation, max, min, and sum of the rows, columns, and elements in a 3 x 3 matrix. 
@@ -31,3 +53,13 @@ For example, `calculate([0,1,2,3,4,5,6,7,8])` should return:
 ```
 ### Running
 Run the main.py it will calucalute the mean, variance, standard deviation. You can also changes the values according to your needs.
+
+## 🧠 Skills Used
+- Python
+- Mathematical logic
+- Code structuring
+
+---
+
+## 👩‍💻 Author
+**Saloni Dhiman**
