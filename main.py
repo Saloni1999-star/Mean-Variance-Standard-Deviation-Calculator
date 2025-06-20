@@ -2,7 +2,7 @@ import mean_var_std
 
 #testing it using different values
 #test value one 
-test_lst = [0,1,2,3,4,5,6,7,8]
+test_lst = [0,1,2,3,4,5,6,7,8] 
 print("Result of test list one")
 test_one = mean_var_std.calculate(test_lst)
 print(test_one)
