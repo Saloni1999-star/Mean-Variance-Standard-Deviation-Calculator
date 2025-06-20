@@ -1,6 +1,6 @@
 import numpy as np
 
-def calculate(list):
+def calculate(list): 
   
   try:
       #converting list into 3X3 matrix	
